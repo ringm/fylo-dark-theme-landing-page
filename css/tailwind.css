@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+
+.btn-gradient {
+  background: linear-gradient(90deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 100%);
+}
+
+.bg-image {
+  background-image: url('../images/bg-curvy-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom -10rem;
+}
+
+.hover\:fill-cyan:hover {
+  fill: #65E2D9;
+}
+
+@media (min-width: 968px) {
+  .bg-image {
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-size: 100vw;
+    background-position: center bottom;
+  }
+}
+
+@tailwind utilities;
